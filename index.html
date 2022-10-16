@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<main>
+    <section class="introduction">
+        <h1>Introduction</h1>
+        <p>HTML- Hyper Text Transfer Protocol. It is a markup language that
+            composes the structure of any website. Its language is made up of elements
+            that define how it's content should be displayed. Anyone looking at getting
+            into web design or development would need to have an understanding of HTMl.
+        </p>
+    </section>
+
+    <section class="prerequisites">
+        <h1>Prerequisites</h1>
+        <p>Few things you'll need</p>
+        <ul>
+            <li>A code editor (VS code, Sublime Text, Atom)</li>
+            <li>A browser (Chrome,Firefox,Edge)</li>
+            <li>Your own focus</li>
+        </ul>
+    </section>
+
+    <section class="functionality">
+        <h1>Functionality</h1>
+        <p>Its good to note that HTML is only a markup language and not a programming
+            language.Html code is written in a code editor and processed in a browser to
+            show it's contents. Html code are written in pairs of tags, an opening and a closing one.
+            <span><code>"&lth1&gt Heading &lt/h1&gt"</code></span> The &lth1&gt tag represents a header and the text between 
+            both tags would be displayed in the browser as a header  
+        </p>
+    </section>
+
+    <section class="basics">
+        <h1>HTMl Basics</h1>
+        <ul>
+            <li>HTML documents start with a <span>"&lt!Doctype html declaration&gt"</span> decla
+                ring that the page is in HTML5.</li>
+            <li>The actual code starts with the <span>"&lthtml&gt"</span> tag</li>
+            <li>It continues with the <span>"&lthead&gt"</span> tag which contains meta tags</li>
+            <li>The "&lttitle&gt" tag is used to display the title of the page
+                It is placed inside the <span>"&lthead&gt"</span> tag
+            </li>
+            <li>The <span>"&ltbody&gt"</span> tag contains the visible content of the page</li>
+            <li>Always remember to close your tags<span>"&lt/body&gt"</span>(Note that not all tags have closing tags)</li>
+        </ul>
+    </section>
+
+    <section class="elements">
+        <h1>HTML elements</h1>
+        <ul>
+            <li><span>&lth1&gt -&lth6&gt</span>- Defines HTML headings in order of their importance</li>
+                <li><span>&ltp&gt </span>Defines HTML paragraphs</li>
+                <li><span>&lta&gt </span>Defines HTML hyperlinks</li>
+                <li><span>&ltul&gt </span>Defines HTML Unordered Lists</li>
+                <li><span>&ltol&gt </span> Defines HTML ordered lists</li>
+                <li><span>&ltli&gt </span> Defines the listed item</li>
+                <li><span>&lt!-- --&gt </span> Defines HTML Comments so that others can see understand what you're trying to do</li>
+                <li><span>&ltem&gt </span> Defines Emphasized text</li>
+                <li><span>&ltstrong&gt </span> Defines Important Text</li>
+                <li><span>&ltb&gt </span> Defines bold text</li>
+                <li><span>&lti&gt</span> Defines Text in italics</li>
+        </ul>
+    </section>
+
+    <section class="attributes">
+        <h1>HTML Attributes</h1>
+        <p>HTML attributes are used on elements to convey extra meaning or contain extra details of that element.</p>
+        <ul>
+            <li>lang attribute- 
+                It is used to specify the language that the webpage is written
+                
+                <span>&lthtml lang="en"&gt</span>
+                This specifies the language in English. This enables Web browsers and Search engine to give better search results to their users.
+            </li>
+            <li>style attribute- 
+                The style attribute is used on HTML elements so that CSS styles can be applied to it
+                
+                <span>"&lth1&gt style="color:white; background-color: blue;">N-Digitals&lt/h1&gt"</span>
+                
+                This specifies the color and background color of the content of the h1 element 'N-Digitals'
+            </li>
+            <li>src attribute- 
+                The src attribute is used in the img element to specify a path to the location of the image to be displayed on the webpage
+                
+                <span>"&ltimg src= "./images/ndigitals-logo" /&gt"</span>
+                
+                This specifies the location (url) of the ndigitals-logo image
+            </li>
+            <li>alt attribute- 
+                This is used in img elements to define alternative text to be displayed in case of error in display of the original image. It is also good for screen readers to be able to know what is on the page
+                
+                <span>"&ltimg src= "./images/ndigitals-logo" alt= "ndigitals logo" /&gt"</span>
+            </li>
+
+            <li>
+                href attribute
+                This attribute specifies the  URL to somewhere else on the same webpage, or another webpage of the same website or another website entirely.
+
+                The path specified can either be a relative URL or an absolute URL.
+
+                <span>"&lta href= "./ndigitals_projects/cat-ai.html"&gt N-Digitals Projects&lt/a&gt</span>
+                This is  relative URL because the folders are within the same computer.
+
+                <span>&lta href= "https://ndigitals04.github.io/portfolio-website"> N-Digitals Portfolio Website&lt/a&gt" </span>
+                The path specified is an absolute URL cause it's located on another PC.
+            </li>
+
+            <li>id attribute- 
+                The id attribute is used to give a unique identity to an element so as to be styled in css or to be referenced in JavaScript.
+                
+                <span>&lth1 id="heading">N-Digitals&lt/h1&gt</span>
+            </li>
+            <li>class attribute- 
+                The class attribute is just like the id attribute except that it can be used for multiple elements.
+                It's very useful when you want to style a particular set of elements in a certain way
+                
+                <span>&ltp class= "paragraph">Our services&lt/p&gt</span>
+            </li>
+
+            <li>title attribute
+                This is used to give more information about the content of an element. 
+                
+                <span>&ltp title="We offer services such as catering, baking, cooking"&gt Our services include&lt/p&gt</span>
+                
+                This is that stuff that appears when you hover over some text in a webpage
+            </li>
+        </ul>
+    </section>
+
+    <section class="html5">
+        <h1>HTML5 semantic elements</h1>
+        <p>I learnt about 7 html5 semantic elements</p>
+    </section>
+
+    <section class="video">
+        <h1>Video</h1>
+        <p>I learnt how to add video and audio with the video and audio element</p>
+        <img src="gdscday4code.png" alt="html code" />
+        <img src="gdscday4linkedin.png" alt="html code" />
+    </section>
+</main>    
+</body>
+</html>
